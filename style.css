@@ -1,0 +1,133 @@
+
+@font-face {
+    font-family: "Monospace";
+    src: url("/root/fonts/Monospace.ttf") format("truetype");
+      }
+
+      @font-face {
+        font-family: "OCR";
+        src: url("/root/fonts/OCR_A_Regular.ttf") format("truetype");
+          }
+
+div.title {
+    flex-shrink: 0;
+    background-color: black;
+    text-align: center;
+    font-family: 'Monospace', 'Courier New', Courier, monospace ; ;
+    font-style: normal;
+    font-weight: 10px;
+    line-height: normal;
+    text-transform: uppercase;
+    font-size: 10pt;
+    width: 100%;
+    height: 800px;
+    color: #FFF;
+    
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    /*background: #1D1D1D;*/
+    background-color: black;
+}
+
+p {
+    font-family: 'Monospace', 'Courier New', Courier, monospace ;
+    height: auto;
+    width: 50%;
+    color: #FFF;
+    font-size: 15pt;
+    margin-bottom: 100px;
+}
+
+h2 {
+    font-family: Monospace;
+    height: auto;
+    color: #FFF;
+    font-size: 20pt;
+
+}
+
+h1.sub {
+    color: orange;
+    font-size: 20;
+    font-weight: 100;
+    animation: opacity 10s;
+    text-align: left;
+    padding-left: 20px;
+    
+}
+
+h1.t {
+    padding-top: 250px;
+    animation: blink 1s infinite;
+    
+}
+
+.t2 {
+    overflow: hidden;
+    white-space: nowrap; 
+    margin: 0 auto; 
+    animation: typing 5s steps(60,end);
+  
+
+  }
+
+.flexbox {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: auto;
+    align-items: center;
+    width: 100%;
+
+  }
+
+  .img {
+    width: 100%;
+    height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 500px;
+      }
+
+.s {
+    font-family: 'Monospace', 'Courier New', Courier, monospace ;
+    color: orange;
+    font-size: 350;
+    font-weight: 100;
+    animation: blink 1s infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    
+}
+
+
+  
+  @keyframes blink{
+    0%{}
+    100% {
+      background: black;
+      color: black;
+    }
+  }
+
+  @keyframes opacity{
+    0%{
+      opacity: 0%;
+    }
+    100% {
+      opacity: 100%;
+    }
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
